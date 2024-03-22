@@ -13,6 +13,7 @@ import Sidebar from './Components/Sidebar';
 import Navbar from './Components/Navbar';
 import Contact from './Pages/ContactUs.js';
 import CourseRegi from './Pages/CourseRegi.js';
+import Upload from './Pages/Upload.js';
 
 function App() {
   const { user } = useAuthContext();
@@ -32,6 +33,7 @@ function App() {
           <Route path="profile" element={<ProfileWithSidebar />} />
           <Route path="register" element={<RegisterWithSidebar />} />
           <Route path="courseregi" element={<CourseRegiWithSidebar/>}/>
+          <Route path="fileupload" element={<FileUploadWithSidebar/>}/>
         </Routes>
       </div>
     </BrowserRouter>
@@ -84,6 +86,16 @@ const CourseRegiWithSidebar = () => (
     <div className="flex-grow pl-5 " >
       <Navbar />
       <CourseRegi/>
+    </div>
+  </div>
+);
+
+const FileUploadWithSidebar = () => (
+  <div className="flex bg-gray-100">
+    <div className="w-1/4"><Sidebar /></div>
+    <div className="flex-grow pl-5 " >
+      <Navbar />
+      <Upload/>
     </div>
   </div>
 );

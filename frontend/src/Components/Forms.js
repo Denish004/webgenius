@@ -116,6 +116,8 @@ import {useStudentContext}  from "../hooks/useStudentContext"
 
 function Form() {
 
+    const [type,setType]=useState('disabled')
+
     const {dispatch}=useStudentContext()
     const [name, setName] = useState("");
     const [error, seterror] = useState("");
@@ -213,7 +215,7 @@ function Form() {
               <div className="flex flex-wrap mb-4 ">
                 <label htmlFor="name" className="w-full md:w-1/3 mb-2 md:mb-0">
                   <p className="font-semibold">Full Name</p>
-                  <input type="text" name="name" id="name" placeholder="Enter your name" className="input-field" />
+                  <input type="text" name="name"  id="name" placeholder="Enter your name" className="input-field" disabled={type=='disabled'}/>
                 </label>
                               <label htmlFor="fName" className="w-full md:w-1/3 mb-2 md:mb-0">
                                   <p className="font-semibold">Father's Name</p>
@@ -225,6 +227,7 @@ function Form() {
                                       onChange={(e) => setFName(e.target.value)}
                                       value={fName}
                                       className={`input-field ${emptyFields.includes('fName') ? 'error' : ''}`}
+                                      disabled={type=='disabled'}
                                   />
                               </label>
 
@@ -238,6 +241,7 @@ function Form() {
                                       onChange={(e) => setMName(e.target.value)}
                                       value={mName}
                                       className={`input-field ${emptyFields.includes('mName') ? 'error' : ''}`}
+                                      disabled={type=='disabled'}
                                   />
                               </label>
                                </div>
@@ -252,6 +256,7 @@ function Form() {
                                           onChange={(e) => setDOB(e.target.value)}
                                           value={DOB}
                                           className={`input-field ${emptyFields.includes('DOB') ? 'error' : ''}`}
+                                          disabled={type=='disabled'}
                                       />
                                   </label>
 
@@ -265,6 +270,7 @@ function Form() {
                                           onChange={(e) => setAadharNo(e.target.value)}
                                           value={aadharNo}
                                           className={`input-field ${emptyFields.includes('aadharNo') ? 'error' : ''}`}
+                                          disabled={type=='disabled'}
                                       />
                                   </label>
 
@@ -278,6 +284,7 @@ function Form() {
                                       onChange={(e) => setEmail(e.target.value)}
                                       value={email}
                                       className={`input-field ${emptyFields.includes('email') ? 'error' : ''}`}
+                                      disabled={type=='disabled'}
                                       />
                               </label>
                                       </div>
@@ -293,6 +300,7 @@ function Form() {
                                           onChange={(e) => setPhone(e.target.value)}
                                           value={phone}
                                           className={`input-field ${emptyFields.includes('phone') ? 'error' : ''}`}
+                                          disabled={type=='disabled'}
                                       />
                                   </label>
 
@@ -306,6 +314,7 @@ function Form() {
                                           onChange={(e) => setGender(e.target.value)}
                                           value={gender}
                                           className={`input-field ${emptyFields.includes('gender') ? 'error' : ''}`}
+                                          disabled={type=='disabled'}
                                       />
                                   </label>
 
@@ -319,6 +328,7 @@ function Form() {
                                           onChange={(e) => setRegNo(e.target.value)}
                                           value={regNo}
                                           className={`input-field ${emptyFields.includes('regNo') ? 'error' : ''}`}
+                                          disabled={type=='disabled'}
                                       />
                                   </label>
                               </div>
@@ -340,6 +350,7 @@ function Form() {
                                       onChange={(e) => setBranch(e.target.value)}
                                       value={branch}
                                       className={`input-field ${emptyFields.includes('branch') ? 'error' : ''}`}
+                                      disabled={type=='disabled'}
                                   />
                               </label>
 
@@ -353,6 +364,7 @@ function Form() {
                                       onChange={(e) => setYear(e.target.value)}
                                       value={year}
                                       className={`input-field ${emptyFields.includes('year') ? 'error' : ''}`}
+                                      disabled={type=='disabled'}
                                   />
                               </label>
 
@@ -366,6 +378,7 @@ function Form() {
                                       onChange={(e) => setSem(e.target.value)}
                                       value={sem}
                                       className={`input-field ${emptyFields.includes('sem') ? 'error' : ''}`}
+                                      disabled={type=='disabled'}
                                   />
                               </label>
 
@@ -384,6 +397,7 @@ function Form() {
                                           onChange={(e) => setAddress(e.target.value)}
                                           value={address}
                                           className={`input-field ${emptyFields.includes('address') ? 'error' : ''}`}
+                                          disabled={type=='disabled'}
                                       />
                                   </label>
                               </div>
