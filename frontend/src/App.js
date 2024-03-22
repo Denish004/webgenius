@@ -17,21 +17,15 @@ import CourseRegi from './Pages/CourseRegi.js';
 function App() {
   const { user } = useAuthContext();
 
-  const HomepageWithoutSidebar = () => (
-    <>
-      <Homepage />
-      <Routes><Route path="login" element={<Login_new />} />
-      <Route path="signup" element={<Signup_new />} />
-</Routes>
-      
-    </>
-  );
-
+  
+  
   return (
     <BrowserRouter>
       <div>
         <Routes>
-          <Route path="/" element={<HomepageWithoutSidebar />} />
+          <Route path="/" element={<Homepage />} />
+    <Route path="login" element={<Login_new />} />
+    <Route path="signup" element={<Signup_new />} />
           <Route path="contact" element={<Contact/>}/>
           <Route path="StudentPortal/*" element={<StudentPortalWithSidebar />} />
           <Route path="TeacherPortal/*" element={<TeacherPortalWithSidebar />} />
