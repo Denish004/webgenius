@@ -1,10 +1,8 @@
-import bg from "../Assets/featuresbg.png"
+import bg from "../Assets/featuresbg-removebg.png"
 export default function Features(){
     return(
         <div>
-            <section class="bg-violet-300 dark:bg-gray-900" style={{
-            //    backgroundImage: 'linear-gradient(to left, rgb(181 153 238), #6a5acd)'
-                backgroundImage:"url('https://as1.ftcdn.net/v2/jpg/01/35/10/88/1000_F_135108813_zFCOBpmhcSpQwe7FM4HT65zXx2oDIfy7.jpg')"}}>
+            <section class=" dark:bg-gray-900" style={{backgroundImage:`url(${bg})`,backgroundSize:'cover',backgroundPosition:'center'}}>
   <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
       <div class=" mb-8 lg:mb-16 text-center">
           <h2 class="mb-4 text-4xl tracking-tight text-center  font-extrabold text-gray-900 dark:text-white">Designed for business teams like yours</h2>
