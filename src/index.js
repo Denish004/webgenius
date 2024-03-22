@@ -2,13 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { AuthContextProvider } from './context/AuthContext'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-<body> <App />
-<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-</body>
+ <React.StrictMode>
+      <AuthContextProvider>
+    <App />
+    </AuthContextProvider>
+  </React.StrictMode>
    
  
 );

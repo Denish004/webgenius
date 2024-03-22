@@ -7,11 +7,12 @@ import CalendarComponent from "../Components/WorkToDo";
 
 export default function TeacherPortal(){
     return(
-        <div className="flex bg-gray-100">
-      <div className="w-1/4"><Sidebar /></div>
+      //   <div className="flex bg-gray-100">
+      // <div className="w-1/4"><Sidebar /></div>
       
-      <div className="flex-grow pl-5">
-        <Navbar />
+      // <div className="flex-grow pl-5">
+      //   <Navbar />
+        <div>
         <Welcome />
         <div className="flex">
           <div className="w-3/5"><Courses/></div>
@@ -19,8 +20,9 @@ export default function TeacherPortal(){
           <CalendarComponent/></div>
           
           </div>
+          </div>
         
-      </div>
-    </div>
+    //   </div>
+    // </div>
     )
 }
