@@ -1,0 +1,162 @@
+[{
+  "_id": {
+    "$oid": "65fdd3bff86424dd512f9b7b"
+  },
+  "course": "DAA",
+  "URL": {
+    "img1": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/DAA%2Fsign%20(1).jpg?alt=media&token=2d0dbdf3-8a0b-4656-9739-687223fba569",
+    "img2": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/DAA%2Fsign%20(2).jpg?alt=media&token=342c6dc9-4480-4af6-ac90-2d228f551436",
+    "img3": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/DAA%2FSY302%20(1).pdf?alt=media&token=21f9625b-b90f-482e-af58-fbbe4645f380"
+  },
+  "createdAt": {
+    "$date": "2024-03-22T18:53:51.166Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-22T18:53:51.166Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fdd419f86424dd512f9b7d"
+  },
+  "course": "DBMS",
+  "URL": {
+    "img1": "",
+    "img2": "",
+    "img3": ""
+  },
+  "createdAt": {
+    "$date": "2024-03-22T18:55:21.062Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-22T18:55:21.062Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fdd52ff86424dd512f9b91"
+  },
+  "course": "COA",
+  "URL": {
+    "img1": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/COA%2F004SY.pdf?alt=media&token=287df301-368e-474f-b976-7fed6b2ff8c2",
+    "img2": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/COA%2FSEATINSY.pdf?alt=media&token=b8ba7241-3295-4ced-b599-df0a3370d8f8",
+    "img3": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/COA%2FMST.pdf?alt=media&token=9320f6e8-e875-496b-aba5-6378c94ce173"
+  },
+  "createdAt": {
+    "$date": "2024-03-22T18:59:59.169Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-22T18:59:59.169Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fdd66bf86424dd512f9ba3"
+  },
+  "course": "Networks",
+  "URL": {
+    "img1": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FSY302%20(1).pdf?alt=media&token=ec9f6bc9-73b7-41fe-b668-7d0dd03d5ee7",
+    "img2": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FWhatsApp%20Image%202024-03-08%20at%208.00.11%20PM.jpeg?alt=media&token=5125ea1f-2264-4676-953b-78bf9239d3ec",
+    "img3": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FWhatsApp%20Image%202024-03-08%20at%208.00.11%20PM%20(1).jpeg?alt=media&token=5c1b7206-9e59-4f78-b562-36c3c84fd868"
+  },
+  "createdAt": {
+    "$date": "2024-03-22T19:05:15.988Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-22T19:05:15.988Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fdd80bf86424dd512f9bab"
+  },
+  "course": "Machine_Learning",
+  "URL": {
+    "img1": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FDenish_221070071_EXP5.pdf?alt=media&token=624951a2-8e98-4a4d-9167-4ee3c5b1356f",
+    "img2": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FWhatsApp%20Image%202024-03-08%20at%208.00.11%20PM.jpeg?alt=media&token=b58bdfc7-eb3a-49fb-8dbd-6ea179dfd1f8",
+    "img3": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FWhatsApp%20Image%202024-03-08%20at%208.00.11%20PM%20(1).jpeg?alt=media&token=c2c48acd-c893-41b2-8f55-9a3e8e160490"
+  },
+  "createdAt": {
+    "$date": "2024-03-22T19:12:11.516Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-22T19:12:11.516Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fdd80cf86424dd512f9bad"
+  },
+  "course": "Machine_Learning",
+  "URL": {
+    "img1": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FDenish_221070071_EXP5.pdf?alt=media&token=624951a2-8e98-4a4d-9167-4ee3c5b1356f",
+    "img2": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FWhatsApp%20Image%202024-03-08%20at%208.00.11%20PM.jpeg?alt=media&token=b58bdfc7-eb3a-49fb-8dbd-6ea179dfd1f8",
+    "img3": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FWhatsApp%20Image%202024-03-08%20at%208.00.11%20PM%20(1).jpeg?alt=media&token=c2c48acd-c893-41b2-8f55-9a3e8e160490"
+  },
+  "createdAt": {
+    "$date": "2024-03-22T19:12:12.524Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-22T19:12:12.524Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fdd80df86424dd512f9baf"
+  },
+  "course": "Machine_Learning",
+  "URL": {
+    "img1": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FDenish_221070071_EXP5.pdf?alt=media&token=624951a2-8e98-4a4d-9167-4ee3c5b1356f",
+    "img2": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FWhatsApp%20Image%202024-03-08%20at%208.00.11%20PM.jpeg?alt=media&token=b58bdfc7-eb3a-49fb-8dbd-6ea179dfd1f8",
+    "img3": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/Networks%2FWhatsApp%20Image%202024-03-08%20at%208.00.11%20PM%20(1).jpeg?alt=media&token=c2c48acd-c893-41b2-8f55-9a3e8e160490"
+  },
+  "createdAt": {
+    "$date": "2024-03-22T19:12:13.292Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-22T19:12:13.292Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fe026665496301a9fc0253"
+  },
+  "course": null,
+  "URL": {
+    "img1": "",
+    "img2": "",
+    "img3": ""
+  },
+  "createdAt": {
+    "$date": "2024-03-22T22:12:54.942Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-22T22:12:54.942Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65fe02dc3983975ffb3dcb74"
+  },
+  "course": null,
+  "URL": {
+    "img1": "https://firebasestorage.googleapis.com/v0/b/vjti-f9506.appspot.com/o/undefined%2F2583514_cleanup.jpg?alt=media&token=47eb274c-9d2e-409e-8749-86908f214d47",
+    "img2": "",
+    "img3": ""
+  },
+  "createdAt": {
+    "$date": "2024-03-22T22:14:52.834Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-22T22:14:52.834Z"
+  },
+  "__v": 0
+}]

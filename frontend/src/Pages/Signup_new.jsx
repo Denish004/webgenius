@@ -116,9 +116,9 @@ const Signup_new = () => {
                    
                    
                    
-                    <button onClick={handleClick} type="submit" class="w-full  px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login  to your account</button>
+                    <a href="/" onClick={handleClick} type="submit" class="w-full  px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login  to your account</a>
                     <div class="text-sm font-medium text-gray-900 dark:text-white">
-                       Already registered <a class="text-blue-600 hover:underline dark:text-blue-500">Login account</a>
+                       Already registered <a href="/login" class="text-blue-600 hover:underline dark:text-blue-500">Login account</a>
                     </div>
                     {/* <div class="inline-block mx-3">
                    <button onClick={SignIn} type="button" class="mx-2 text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 me-2 mb-2">

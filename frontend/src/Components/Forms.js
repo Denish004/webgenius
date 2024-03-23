@@ -116,6 +116,9 @@ import {useStudentContext}  from "../hooks/useStudentContext"
 
 function Form() {
 
+
+
+    
     const [type,setType]=useState('disabled')
 
     const {dispatch}=useStudentContext()
@@ -215,7 +218,7 @@ function Form() {
               <div className="flex flex-wrap mb-4 ">
                 <label htmlFor="name" className="w-full md:w-1/3 mb-2 md:mb-0">
                   <p className="font-semibold">Full Name</p>
-                  <input type="text" name="name"  id="name" placeholder="Enter your name" className="input-field" disabled={type=='disabled'}/>
+                  <input type="text" name="name"  id="name" placeholder="Aqua" className="input-field" disabled={type=='disabled'}/>
                 </label>
                               <label htmlFor="fName" className="w-full md:w-1/3 mb-2 md:mb-0">
                                   <p className="font-semibold">Father's Name</p>
@@ -223,9 +226,9 @@ function Form() {
                                       type="text"
                                       id="fName"
                                       name="fName"
-                                      placeholder="Enter father name"
+                                      placeholder="Arun"
                                       onChange={(e) => setFName(e.target.value)}
-                                      value={fName}
+                                      value="Arun"
                                       className={`input-field ${emptyFields.includes('fName') ? 'error' : ''}`}
                                       disabled={type=='disabled'}
                                   />
@@ -237,7 +240,7 @@ function Form() {
                                       type="text"
                                       id="mName"
                                       name="mName"
-                                      placeholder="Enter mother name"
+                                      placeholder="Imagica"
                                       onChange={(e) => setMName(e.target.value)}
                                       value={mName}
                                       className={`input-field ${emptyFields.includes('mName') ? 'error' : ''}`}
@@ -252,7 +255,7 @@ function Form() {
                                           type="text"
                                           id="DOB"
                                           name="DOB"
-                                          placeholder="Enter your DOB"
+                                          placeholder="12-05-2004"
                                           onChange={(e) => setDOB(e.target.value)}
                                           value={DOB}
                                           className={`input-field ${emptyFields.includes('DOB') ? 'error' : ''}`}
@@ -266,7 +269,7 @@ function Form() {
                                           type="text"
                                           id="aadharNo"
                                           name="aadharNo"
-                                          placeholder="Enter aadhar number"
+                                          placeholder="4623 2632 2933"
                                           onChange={(e) => setAadharNo(e.target.value)}
                                           value={aadharNo}
                                           className={`input-field ${emptyFields.includes('aadharNo') ? 'error' : ''}`}
@@ -280,7 +283,7 @@ function Form() {
                                       type="email"
                                       id="email"
                                       name="email"
-                                      placeholder="Enter your email"
+                                      placeholder="aqua@gmail.com"
                                       onChange={(e) => setEmail(e.target.value)}
                                       value={email}
                                       className={`input-field ${emptyFields.includes('email') ? 'error' : ''}`}
@@ -296,7 +299,7 @@ function Form() {
                                           type="tel"
                                           id="ph"
                                           name="phone"
-                                          placeholder="Enter mobile number"
+                                          placeholder="1234567890"
                                           onChange={(e) => setPhone(e.target.value)}
                                           value={phone}
                                           className={`input-field ${emptyFields.includes('phone') ? 'error' : ''}`}
@@ -310,7 +313,7 @@ function Form() {
                                           type="text"
                                           id="gender"
                                           name="gender"
-                                          placeholder="Enter your gender"
+                                          placeholder="Male"
                                           onChange={(e) => setGender(e.target.value)}
                                           value={gender}
                                           className={`input-field ${emptyFields.includes('gender') ? 'error' : ''}`}
@@ -324,7 +327,7 @@ function Form() {
                                           type="text"
                                           id="regNo"
                                           name="regNo"
-                                          placeholder="Enter registration number"
+                                          placeholder="221070078"
                                           onChange={(e) => setRegNo(e.target.value)}
                                           value={regNo}
                                           className={`input-field ${emptyFields.includes('regNo') ? 'error' : ''}`}
@@ -346,7 +349,7 @@ function Form() {
                                       type="text"
                                       id="stream"
                                       name="stream"
-                                      placeholder="Enter your branch"
+                                      placeholder="CE"
                                       onChange={(e) => setBranch(e.target.value)}
                                       value={branch}
                                       className={`input-field ${emptyFields.includes('branch') ? 'error' : ''}`}
@@ -360,7 +363,7 @@ function Form() {
                                       type="text"
                                       id="previousClass"
                                       name="previousClass"
-                                      placeholder="Enter year of study"
+                                      placeholder="2022"
                                       onChange={(e) => setYear(e.target.value)}
                                       value={year}
                                       className={`input-field ${emptyFields.includes('year') ? 'error' : ''}`}
@@ -374,7 +377,7 @@ function Form() {
                                       type="text"
                                       id="hobbies"
                                       name="hobbies"
-                                      placeholder="Enter your semester"
+                                      placeholder="Four"
                                       onChange={(e) => setSem(e.target.value)}
                                       value={sem}
                                       className={`input-field ${emptyFields.includes('sem') ? 'error' : ''}`}
@@ -393,7 +396,7 @@ function Form() {
                                           type="text"
                                           id="address"
                                           name="address"
-                                          placeholder="Enter your Address"
+                                          placeholder="Matunga"
                                           onChange={(e) => setAddress(e.target.value)}
                                           value={address}
                                           className={`input-field ${emptyFields.includes('address') ? 'error' : ''}`}
@@ -402,7 +405,7 @@ function Form() {
                                   </label>
                               </div>
             </section>
-            <button className="submit-btn bg-violet-600 hover:bg-violet-800 text-white py-2 px-4 rounded-md block mx-auto mt-4"> Submit </button>
+            <a href="/access" className="submit-btn bg-violet-600 hover:bg-violet-800 text-white py-2 px-4 rounded-md block mx-auto mt-4" style={{width:80}}> Modify </a>
             {error && <div className='error'>{error}</div>}
 
           </form>

@@ -1,10 +1,13 @@
 import { useState } from "react";
 import ProfileLottie from "../Lotties/profile";
 import TeacherProfileLottie from "../Lotties/teacherprofile"
+import { useAuthContext } from "../hooks/useAuthContext";
 export default function Sidebar(){
-   const[type,setType]=useState('teacher')
+   const {user, dispatch } = useAuthContext()
     return(
 <div>
+   
+
 <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
    <span class="sr-only">Open sidebar</span>
    <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -21,11 +24,11 @@ aria-label="Sidebar">
 
 
       <ul class="space-y-2 font-medium">
-        {type==='student' &&<li>
+        {user && user.userType==='Student' &&<li>
          
             <ProfileLottie/>
         </li>}
-        {type==='teacher' && <li>
+        {user && user.userType==='Teacher' && <li>
          <TeacherProfileLottie/>
          </li>}
 
@@ -37,7 +40,7 @@ aria-label="Sidebar">
                <span class="ms-3 ">Profile</span>
             </a>
          </li>
-         <li>
+         {user && user.userType=='Student' &&<li>
             <a href="/register" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <div class="flex-shrink-0 w-9 h-9 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
                   <img src="https://cdn-icons-png.freepik.com/256/1598/1598584.png?ga=GA1.1.1255800410.1704448219&"/>
@@ -45,40 +48,66 @@ aria-label="Sidebar">
                <span class="flex-1 ms-3 whitespace-nowrap">Student Registeration</span>
                
             </a>
-         </li>
-         <li>
+         </li>}
+         {user && user.userType=='Teacher' &&<li>
+            <a href="/grant" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <div class="flex-shrink-0 w-9 h-9 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                  <img src="https://cdn-icons-png.freepik.com/256/1598/1598584.png?ga=GA1.1.1255800410.1704448219&"/>
+               </div>
+               <span class="flex-1 ms-3 whitespace-nowrap">Request</span>
+               
+            </a>
+         </li>}
+        {user && user.userType=='Student' && <li>
             <a href="/courseregi" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <div class="flex-shrink-0 w-9 h-9 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
                   <img src="https://cdn-icons-png.freepik.com/256/1642/1642789.png?ga=GA1.1.1255800410.1704448219&"/>
                </div>
                <span class="flex-1 ms-3 whitespace-nowrap">Course Registeration</span>
-               <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
             </a>
-         </li>
-         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+         </li>}
+        {user && user.userType=='Student' &&<li>
+            <a href="/library" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <div class="flex-shrink-0 w-9 h-9 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
                   <img src="https://cdn-icons-png.freepik.com/256/1837/1837945.png?ga=GA1.1.1255800410.1704448219&"/>
                </div>
                <span class="flex-1 ms-3 whitespace-nowrap">Library</span>
             </a>
-         </li>
-         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+         </li>}
+        {user && user.userType=='Teacher' &&<li>
+            <a href="/fileupload" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <div class="flex-shrink-0 w-9 h-9 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                  <img src="https://cdn-icons-png.freepik.com/256/1837/1837945.png?ga=GA1.1.1255800410.1704448219&"/>
+               </div>
+               <span class="flex-1 ms-3 whitespace-nowrap">Upload Files</span>
+            </a>
+         </li>}
+         {user && user.userType=='Student' &&<li>
+            <a href="/student" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <div class="flex-shrink-0 w-9 h-9 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
                   <img src="https://cdn-icons-png.freepik.com/256/1643/1643269.png?ga=GA1.1.1255800410.1704448219&"/>
                </div>
                <span class="flex-1 ms-3 whitespace-nowrap">Assignments</span>
+               <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
             </a>
-         </li>
-         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+         </li>}
+         {user && user.userType=='Teacher' &&<li>
+            <a href="/teacher" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+               <div class="flex-shrink-0 w-9 h-9 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
+                  <img src="https://cdn-icons-png.freepik.com/256/1643/1643269.png?ga=GA1.1.1255800410.1704448219&"/>
+               </div>
+               <span class="flex-1 ms-3 whitespace-nowrap">Assignments</span>
+               <span class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+            </a>
+         </li>}
+         {user && user.userType=='Student' &&<li>
+            <a href="/hall-ticket" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <div class="flex-shrink-0 w-9 h-9 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
                   <img src="https://cdn-icons-png.freepik.com/256/166/166162.png?ga=GA1.1.1255800410.1704448219&"/>
                </div>
                <span class="flex-1 ms-3 whitespace-nowrap">Hall Ticket</span>
             </a>
-         </li>
+         </li>}
          <li>
             <a href="/StudentPortal" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                <div class="flex-shrink-0 w-9 h-9 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">

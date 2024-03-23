@@ -8,6 +8,8 @@ const mongoose = require('mongoose')
 // const workoutRoutes = require('./routes/workouts')
 const userRoutes = require('./routes/user')
 const studentRoutes=require('./routes/student')
+const courseRegisterRoutes = require('./routes/courseRegisterRoutes')
+const courseRegister = require('./models/courseRegister')
 const courseModel = require('./models/courseModel');
 const bodyParser= require('body-parser')
 
@@ -92,6 +94,8 @@ app.post('/submit', async (req,res)=>{
 // routes
 /app.use('/api/student', studentRoutes)
 app.use('/api/user', userRoutes)
+app.use('/api/courseRegister', courseRegisterRoutes)
+
 
 // connect to db
 mongoose.connect("mongodb+srv://cochack1:WebGenius123@cluster0.lqbklgm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/Authentication")

@@ -1,0 +1,58 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "name": "sanskar",
+      "message": "I want to change my details",
+      "access": false
+    },
+    {
+      "id": "2",
+      "name": "Alinaa",
+      "message": "I want to change 1",
+      "access": false
+    },
+    {
+      "id": "3",
+      "name": "Denish",
+      "message": "I want to change 2",
+      "access": true
+    },
+    {
+      "id": "4",
+      "name": "Keshav",
+      "message": "I want to 3",
+      "access": true
+    },
+    {
+      "id": "a0c4",
+      "name": "Ariv",
+      "message": "I want a choclate",
+      "permission": false,
+      "access": true
+    }
+  ],
+  "assignmnets": [
+    {
+      "id": "963f",
+      "title": "Integration",
+      "subject": "Maths",
+      "description": "Solve questions from kumbhojkar",
+      "due_date": "2024-03-04"
+    },
+    {
+      "id": "d3d5",
+      "title": "Integration",
+      "subject": "Maths",
+      "description": "Solve questions from kumbhojkar",
+      "due_date": "2024-03-04"
+    },
+    {
+      "id": "9666",
+      "title": "Integration",
+      "subject": "Maths",
+      "description": "Solve questions from kumbhojkar",
+      "due_date": "2024-03-04"
+    }
+  ]
+}

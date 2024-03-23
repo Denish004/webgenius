@@ -13,22 +13,35 @@ const get_all_student= async (req,res)=>{
 
 //get a single workout
 
-const get_a_student= async (req,res)=>{
-    const {id}=req.params //to get the parameters from the req.body=> req.params
-    
-    //code for if id is not valid
-    if(!mongoose.Types.ObjectId.isValid(id))
-    {
-        return res.status(404).json({error:"No such student"})
+const  get_a_student = async (req, res) => {
+    const { email } = req.params;
+
+    // Validate the email format
+    if (!isValidEmail(email)) {
+        return res.status(400).json({ error: "Invalid email format" });
     }
-    const student= await Student.findById(id)
-    //code for if workout does not exist for the id
-    if(!student)
-{
-    return res.status(404).json({error:"No such students"})
-}
-    res.status(200).json(student)
-}
+
+    // Find the student by email
+    try {
+        const student = await Student.findOne({ email });
+
+        if (!student) {
+            return res.status(404).json({ error: "Student not found" });
+        }
+
+        res.status(200).json(student);
+    } catch (error) {
+        console.error("Error retrieving student:", error);
+        res.status(500).json({ error: "Internal server error" });
+    }
+};
+
+// Email validation function
+const isValidEmail = (email) => {
+    // Regular expression for basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+};
 
 //create new student
 const create_a_student= async (req,res)=>{

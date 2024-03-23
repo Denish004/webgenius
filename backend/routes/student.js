@@ -15,7 +15,7 @@ const router= express.Router()
 router.get('/',get_all_student)
 
 //get a single workout
-router.get('/:id',get_a_student)
+router.get('/:email',get_a_student)
 
 //post a new workout
 router.post('/',create_a_student )
