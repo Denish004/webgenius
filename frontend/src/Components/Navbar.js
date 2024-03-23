@@ -8,8 +8,8 @@ export default function Navbar(){
   
   <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse" style={{marginRight:30,paddingLeft:100}}>
     <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>s
+      <img src="https://cdn-icons-png.freepik.com/256/747/747086.png?ga=GA1.1.1255800410.1704448219&" class="h-8" alt="Flowbite Logo" />
+      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Shiksha Portal</span>
   </a>
       
   </div>
